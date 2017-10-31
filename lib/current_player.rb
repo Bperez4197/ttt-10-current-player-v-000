@@ -10,9 +10,5 @@ def turn_count(board)
 end
 
 def current_player(board)
-  if turn_count(board) != 4 % 2
-    "X"
-  else
-    "O"
-end
+  if turn_count(board).even? ? "X" : "O"
 end
