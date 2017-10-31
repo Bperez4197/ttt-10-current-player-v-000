@@ -10,7 +10,6 @@ def turn_count(board)
 end
 
 def current_player(board)
-  if turn_count(board) == 15 % 2
-    puts "X"
-end
+  turn_count(board).even? = "X"
+    
 end
