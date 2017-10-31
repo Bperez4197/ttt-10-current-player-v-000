@@ -8,3 +8,10 @@ def turn_count(board)
     end
     count
 end
+
+def current_player(board)
+  turn_count(board)
+  if count == 4 % 2
+    puts "X"
+end
+end
